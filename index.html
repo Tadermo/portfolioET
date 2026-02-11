@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Portafolio - Erika Tadermo</title>
+    <script src="https://kit.fontawesome.com/39255b4bab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Erika Tadermo</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SKILL</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                        </navs <!-- Icono del menú responsive -->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos al portafolio de Erika Tadermo</p>
+                <h2><span>Desarrollador WEB</span></h2>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/etIA.jpeg" class="img-et" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Erika Tadermo</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Tengo experiencia en desarrollo web y análisis UX, especializada en la creación, mantenimiento y mejora
+                de soluciones
+                digitales orientadas al usuario. Manejo tecnologías frontend como Angular y Vue.js, así como desarrollo
+                con
+                PHP, Node.js y WordPress, integrando bases de datos MySQL, PostgreSQL y Oracle SQL. He participado en
+                proyectos de desarrollo y migración tecnológica aplicando metodologías ágiles (Scrum), control de
+                versiones
+                con Git y gestión de requerimientos mediante Jira.
+            </p>
+            <p>Me encanta relacionarme con proyectos innovadores que me permitan aplicar mis habilidades como
+                profesional.</p>
+            <a download="CV" href="img/CV Erika Tadermo.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILL -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SKILL</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>HTML</h4>
+                <hr>
+                <p>Es el lenguaje de marcado estándar para las páginas web.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>PHP</h4>
+                <hr>
+                <p>Es el lenguaje de marcado estándar para las páginas web.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-css3-alt"></i></span>
+                <h4>CSS</h4>
+                <hr>
+                <p>Las Hojas de Estilo en Cascada o CSS es el lenguaje de estilos utilizado para describir la
+                    presentación de documentos HTML.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>SQL</h4>
+                <hr>
+                <p>SQL es un lenguaje de dominio específico, diseñado para administrar, y recuperar información de
+                    sistemas de gestión de bases de datos relacionales.​</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-square-js"></i></span>
+                <h4>JAVASCRIPT</h4>
+                <hr>
+                <p>Es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-angular"></i></span>
+                <h4>Angular</h4>
+                <hr>
+                <p>Es un framework de desarrollo web de código abierto basado en TypeScript, diseñado para crear aplicaciones web de una sola página (SPA) de manera eficiente y escalable.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Posicionamiento SEO</h4>
+                <hr>
+                <p>Es un conjunto de acciones orientadas a mejorar el posicionamiento de un sitio web en la lista de
+                    resultados de los distintos buscadores de internet.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-bootstrap"></i></span>
+                <h4>Bootstrap</h4>
+                <hr>
+                <p>Es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios
+                    y aplicaciones web.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-wordpress"></i></span>
+                <h4>WordPress</h4>
+                <hr>
+                <p>Es un sistema de gestión de contenidos web (CMS o content management system), que en pocas palabras
+                    es un sistema para publicar contenido en la web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>HTML & CSS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso1" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>SQL</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso2" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"></span>WordPress</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso3" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>JavaScript</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso4" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Colaboraciones en desarrollo y optimización de los siguientes sitios WEB</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture1.jpg" alt="">
+                <div class="info">
+                    <h4>Agencia de Marketing Digital y Desarrollo WEB.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture2.jpg" alt="">
+                <div class="info">
+                    <h4>Hotel Margarita Concorde.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture5.jpg" alt="">
+                <div class="info">
+                    <h4>Globofran, consultores expertos en inversiones migratorias.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture4.jpg" alt="">
+                <div class="info">
+                    <h4>César Miguel Rondón escritor, periodista, locutor, publicista, host de radio y TV venezolano.
+                    </h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture8.jpg" alt="">
+                <div class="info">
+                    <h4>KovaiCorp, grupo de empresas privadas y de capital 100% particular.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture6.jpg" alt="">
+                <div class="info">
+                    <h4>Color Market, tienda de Pinturas.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture3.jpg" alt="">
+                <div class="info">
+                    <h4>0800 FLOR, periodista y productora de TV.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture7.jpg" alt="">
+                <div class="info">
+                    <h4>General Import, tienda departamental.</h4>
+                    <p><span>Tecnologías implementadas:</span> WordPress, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture9.jpg" alt="">
+                <div class="info">
+                    <h4>Sitio Web resposive para apuestas deportivas</h4>
+                    <p><span>Tecnologías implementadas:</span> Vue.js</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/picture10.jpg" alt="">
+                <div class="info">
+                    <h4>Sistema interno de gestión de empleados</h4>
+                    <p><span>Tecnologías implementadas:</span> PHP, HTML, CSS, JavaScript, Bootstrap, MySQL.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCTION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/c1b70c0945733555188c8f6d3b4aefae" method="POST">
+                <div class="fila mitad">
+                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" name="correo" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="tema" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="hidden" name="_next" value="https://tadermo.github.io/portfolioET/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>&copy; Derechos Reservados - 2026</p>
+    </footer>
+
+    <script src="scriptET.js"></script>
+</body>
+
+</html>

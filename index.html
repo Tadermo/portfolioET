@@ -278,17 +278,18 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactanos ahora</h3>
         <div class="contenedor-form">
-            <form action="https://formsubmit.co/c1b70c0945733555188c8f6d3b4aefae" method="POST">
+            <div id="mensaje-respuesta" style="display: none; margin-bottom: 20px;"></div>
+            <form id="formulario-contacto">
                 <div class="fila mitad">
-                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" name="correo" placeholder="Dirección de Email" class="input-mitad">
+                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad" required>
+                    <input type="email" name="correo" placeholder="Dirección de Email" class="input-mitad" required>
                 </div>
                 <div class="fila">
                     <input type="text" name="tema" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
                     <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
-                        class="input-full"></textarea>
+                        class="input-full" required></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
                 <input type="hidden" name="_next" value="https://tadermo.github.io/portfolioET/">

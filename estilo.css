@@ -128,7 +128,7 @@
 
         #sobremi .contenedor-foto {
             max-width: 400px;
-            margin-right: 80px;
+            /* margin-right: 80px; */
         }
 
         img {
@@ -136,12 +136,15 @@
             width: 100%;
             border-radius: 20px; */
             background-color: #f3f3f3;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
         }
 
         .img-et {
             width: 100%;
-            /* border-radius: 150px; */
-            margin-top: 65%;
+            /* border-radius: 150px; 
+            margin-top: 65%; */
+            image-rendering: -webkit-optimize-contrast;
         }
 
         #sobremi .sobremi {
@@ -414,6 +417,10 @@
             filter: grayscale(1);
             object-fit: cover;
             transition: .5s;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
         #portfolio .fila .proyecto:hover img {
@@ -565,6 +572,17 @@
             #inicio .contenido .presentacion h2 {
                 font-size: 40px;
             }
+            /* Optimización de imágenes en móvil */
+            img {
+                image-rendering: auto;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            #portfolio .fila .proyecto img,
+            .img-et {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
             /* *********************/
             /* sección SOBRE MI   */
             /*********************/
@@ -577,9 +595,9 @@
                 max-width: 200px;
                 margin: auto;
             }
-            #sobremi .contenedor-foto img {
+            /* #sobremi .contenedor-foto img {
                 padding: 8px;
-            }
+            } */
             #sobremi .sobremi .titulo-seccion {
                 text-align: center;
             }
@@ -662,4 +680,47 @@
                 text-align: center;
             }
 
+        }
+
+        /* Media Query para tablets (hasta 768px) */
+        @media screen and (max-width: 768px) {
+            #portfolio .fila .proyecto {
+                max-width: 100%;
+            }
+            
+            #portfolio .fila .proyecto img {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+                width: 100%;
+                height: auto;
+            }
+            
+            .img-et {
+                image-rendering: -webkit-optimize-contrast;
+            }
+        }
+
+        /* Media Query para teléfonos (hasta 480px) */
+        @media screen and (max-width: 480px) {
+            #portfolio .fila .proyecto {
+                max-width: 100%;
+                margin: 15px auto;
+            }
+            
+            #portfolio .fila .proyecto img {
+                width: 100%;
+                height: auto;
+                display: block;
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+            
+            img {
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            
+            #sobremi .contenedor-foto {
+                max-width: 100%;
+            }
         }
